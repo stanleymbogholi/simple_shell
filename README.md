@@ -1,1 +1,1 @@
-GetEnv
+getinfo

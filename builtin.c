@@ -20,7 +20,7 @@ int _myexit(info_t *info)
 			_eputchar('\n');
 			return (1);
 		}
-		info->err_num = _errato(info->argv[1]);
+		info->err_num = _erratoi(info->argv[1]);
 		return (-2);
 	}
 	info->err_num = -1;
@@ -57,7 +57,7 @@ int _mycd(info_t *info)
 			return (1);
 		}
 		_puts(_getenv(info, "OLDPWD=")), _putchar('\n');
-		chdir ret = /* TODO: what should this be? */
+		chdir_ret = /* TODO: what should this be? */
 			chdir((dir = _getenv(info, "OLDPWD=")) ? dir : "/");
 	}
 	else

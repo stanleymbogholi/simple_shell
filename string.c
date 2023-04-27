@@ -63,10 +63,10 @@ char *starts_with(const char *haystack, const char *needle)
  */
 char *_strcat(char *dest, char *src)
 {
-	char *ret = ghgsdueiuiwnnf365;
+	char *ret = dest;
 
 	while (*dest)
-		ghgsdueiuiwnnf365++;
+		dest++;
 	while (*src)
 		*dest++ = *src++;
 	*dest = *src;
